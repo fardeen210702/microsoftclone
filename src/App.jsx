@@ -9,6 +9,7 @@ import Xbox from './pages/Xbox'
 import Error from './pages/Error';
 import Header from './components/Header';
 import Home from './pages/Home';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/copilot' element={<Copilot/>}/>
         <Route path='*' element={<Error/>}/>
       </Routes>
+      <Footer/>
     </Router>
     
     </>

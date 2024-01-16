@@ -14,28 +14,30 @@ function Header() {
     console.log(nav);
     return (
         <div className='header '>
-            <div className="midscreenheader hidden md:block">
-                <div className="leftnav">
+            <div className="midscreenheader hidden md:flex  md:justify-between items-center px-2 py-4">
+                <div className="leftnav flex space-x-3 items-center">
                     <div className="logo">
-                        <img src={Microsoftimg} alt="" />
+                        <Link to='/'> 
+                        <img className='w-[120px]'src={Microsoftimg} alt="" />
+                        </Link>
 
                     </div>
-                    <div className="links ">
-                        <Link to='/microsoft365'> MicroSoft365</Link>
-                        <Link to='/teams'> Teams</Link>
-                        <Link to='/copilot'> Copilot</Link>
-                        <Link to='/windows'> Windows</Link>
-                        <Link to='/surface'> Surface</Link>
-                        <Link to='/xbox'> Xbox</Link>
-                        <Link to='/support'> Support</Link>
+                    <div className="links space-x-2 text-xs">
+                        <Link  className='hover:border-b border-black'to='/microsoft365'> Microsoft 365</Link>
+                        <Link className='hover:border-b border-black' to='/teams'> Teams</Link>
+                        <Link className='hover:border-b border-black' to='/copilot'> Copilot</Link>
+                        <Link className='hover:border-b border-black' to='/windows'> Windows</Link>
+                        <Link className='hover:border-b border-black' to='/surface'> Surface</Link>
+                        <Link className='hover:border-b border-black' to='/xbox'> Xbox</Link>
+                        <Link className='hover:border-b border-black' to='/support'> Support</Link>
                     </div>
                 </div>
-                <div className="rightnav">
-                    <h1>All Microsoft</h1>
-                    <div className="searchanduser">
-                        <p>serachicon</p>
-                        <p>carticon</p>
-                        <p>usericon</p>
+                <div className="rightnav flex space-x-3 items-center">
+                    <h1 className='text-sm'>All Microsoft</h1>
+                    <div className="searchanduser flex space-x-2 ">
+                        <p><VscSearch className='size-5' /></p>
+                        <p><IoCartOutline className='size-6' /></p>
+                        <p><PiUserCircleMinusLight className='size-6' /></p>
                     </div>
                 </div>
 
@@ -64,8 +66,8 @@ function Header() {
                 </div>
                 
                 
-            </div>
-            <div className={nav ? ' absolute left-0 w-full bg-white flex flex-col space-y-2 text-lg transition-all ease-in-out  delay-75 border border-gray-200 md:hidden ' : "links fixed flex flex-col -left-28 bg-white " }  onClick={handlenavchange}>
+            
+            <div className={nav ? ' absolute left-0 top-14 w-full bg-white flex flex-col space-y-2 text-lg transition-all ease-in-out  delay-75 border border-gray-200 md:hidden ' : "links fixed flex flex-col -left-28 bg-white " }  onClick={handlenavchange}>
                         <Link  className='border-b-2 py-2 px-2  'to='/microsoft365'> MicroSoft365</Link>
                         <Link className='border-b-2 py-2 px-2 my-2' to='/teams'> Teams</Link>
                         <Link className='border-b-2 py-2 px-2 my-2' to='/copilot'> Copilot</Link>
@@ -74,6 +76,8 @@ function Header() {
                         <Link className='border-b-2 py-2 px-2 my-2' to='/xbox'> Xbox</Link>
                         <Link  className='border-b-2 py-2 px-2 my-2'to='/support'> Support</Link>
                     </div>
+            </div>
+
         </div>
     )
 }
