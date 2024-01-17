@@ -14,7 +14,7 @@ function Header() {
     console.log(nav);
     return (
         <div className='header '>
-            <div className="midscreenheader hidden md:flex  md:justify-between items-center px-2 py-4">
+            <div className="midscreenheader hidden md:flex  md:justify-between items-center px-2 py-4 lg:px-11 xl:px-20">
                 <div className="leftnav flex space-x-3 items-center">
                     <div className="logo">
                         <Link to='/'> 
@@ -34,7 +34,7 @@ function Header() {
                 </div>
                 <div className="rightnav flex space-x-3 items-center">
                     <h1 className='text-sm'>All Microsoft</h1>
-                    <div className="searchanduser flex space-x-2 ">
+                    <div className="searchanduser flex space-x-2  xl:space-x-5">
                         <p><VscSearch className='size-5' /></p>
                         <p><IoCartOutline className='size-6' /></p>
                         <p><PiUserCircleMinusLight className='size-6' /></p>
@@ -67,7 +67,7 @@ function Header() {
                 
                 
             
-            <div className={nav ? ' absolute left-0 top-14 w-full bg-white flex flex-col space-y-2 text-lg transition-all ease-in-out  delay-75 border border-gray-200 md:hidden ' : "links fixed flex flex-col -left-28 bg-white " }  onClick={handlenavchange}>
+            <div className={nav ? ' absolute left-0 top-14 z-20 w-full bg-white flex flex-col space-y-2 text-lg transition-all ease-in-out  delay-75 border border-gray-200 md:hidden ' : "links fixed flex flex-col -left-28 bg-white " }  onClick={handlenavchange}>
                         <Link  className='border-b-2 py-2 px-2  'to='/microsoft365'> MicroSoft365</Link>
                         <Link className='border-b-2 py-2 px-2 my-2' to='/teams'> Teams</Link>
                         <Link className='border-b-2 py-2 px-2 my-2' to='/copilot'> Copilot</Link>

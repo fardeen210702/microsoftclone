@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
     return (
         <div className='footer bg-gray-100 px-6 py-4 sm:flex sm:flex-wrap '>
-            <div className="frstfooter space-y-4 my-8 text-gray-600 text-xs sm:w-1/3">
+            <div className="frstfooter space-y-4 my-8 text-gray-600 text-xs sm:w-1/3 lg:w-1/4">
                 <h1 className='font-bold  text-sm'>What's New</h1>
                 <p>Microsoft 365</p>
                 <p>Games</p>
@@ -12,7 +12,7 @@ function Footer() {
                 <p> Surface Laptop Go2</p>
                 <p>Windows 11 apps</p>
             </div>
-            <div className="frstfooter space-y-4 my-8 text-gray-600 text-xs sm:w-1/3">
+            <div className="frstfooter space-y-4 my-8 text-gray-600 text-xs sm:w-1/3 lg:w-1/4">
                 <h1 className='font-bold  text-sm'>Microsoft Store</h1>
                 <p>Account Profile</p>
                 <p>Download Center</p>
@@ -20,7 +20,7 @@ function Footer() {
                 <p>Returns</p>
                 <p> Order tracking</p>
             </div>
-            <div className="frstfooter space-y-4 my-8 text-gray-600 text-xs sm:w-1/3">
+            <div className="frstfooter space-y-4 my-8 text-gray-600 text-xs sm:w-1/3 lg:w-1/4">
                 <h1 className='font-bold  text-sm'> Microsoft Cloud</h1>
                 <p> Microsoft Security</p>
                 <p>Azure</p>
@@ -30,7 +30,7 @@ function Footer() {
                 <p>Microsoft Industry</p>
                 <p>Microsoft Teams</p>
             </div>
-            <div className="frstfooter space-y-4 my-8 text-gray-600 text-xs sm:w-1/3">
+            <div className="frstfooter space-y-4 my-8 text-gray-600 text-xs sm:w-1/3 lg:w-1/4">
                 <h1 className='font-bold  text-sm'>Developer & IT</h1>
                 <p>Developer Center</p>
                 <p>Documentation</p>

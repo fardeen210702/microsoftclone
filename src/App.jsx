@@ -14,7 +14,9 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <>
+    <div className='w-full flex justify-center'>
+      <div className="App w-[1800px]">
+
     <Router>
       <Header/>
       <Routes>
@@ -31,7 +33,8 @@ function App() {
       <Footer/>
     </Router>
     
-    </>
+      </div>
+    </div>
   )
 }
 

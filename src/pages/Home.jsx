@@ -5,8 +5,11 @@ import Landingpage2 from '../components/Landingpage2'
 function Home() {
   return (
     <>
+    
     <Landingpgae/>
     <Landingpage2/>
+    
+ 
 
         
     </>
