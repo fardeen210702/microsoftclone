@@ -21,28 +21,32 @@ function Microlandingthree() {
                 </details>
 
                 {/* second Detail */}
-                <details className='w-full'><summary className='list-none   flex items-center justify-between sticky top-0 bg-white py-3 border-b-2 border-blue-950 font-bold'> Featured news<FaAngleRight /> </summary>
-                    <div className="detail my-4  flex flex-col">
-                        <div>
+                <details className='w-full flex justify-center '><summary className='list-none   flex items-center justify-between  sticky top-0 bg-white py-3 border-b-2 border-blue-950 font-bold'> Featured news<FaAngleRight /> </summary>
+                    <div className="detail my-4  flex flex-col w-full items-center bg-gray-100 ">
+                        <div className=' lg:w-[85%] '>
 
-                            <p className=' text-gray-500 font-semibold '> Features news</p>
-                            <h1 className='font-bold text-2xl'>Discover what’s happening with Microsoft 365</h1>
+                       
+                        <div className='lg:space-y-5 '>
+
+                            <p className=' text-gray-500 font-semibold '> Featured news</p>
+                            <h1 className='font-bold text-2xl lg:text-4xl lg:font-semibold'>Discover what’s happening with Microsoft 365</h1>
 
                         </div>
 
                         {/* frst feature */}
-                        <div>
+                        <div className=''>
 
                             <div>
 
-                                <div className="containers w-full my-4 border shadow-sm shadow-black rounded-2xl p-2 md:flex mf:flex flex-row-reverse justify-center ">
+                                <div className="containers w-full my-4 border shadow-sm shadow-black rounded-2xl p-2 md:flex mf:flex flex-row-reverse justify-center  bg-white
+                                  ">
 
-                                    <img src={feature1} alt="" className='w-full h-[120px] sm:h-[250px]  object-cover rounded-2xl md:h-[350px] md:w-[400px] ' />
-                                    <div className='md:flex md:flex-col md:justify-around'>
+                                    <img src={feature1} alt="" className='w-full h-[120px] sm:h-[250px]  object-cover rounded-2xl md:h-[350px] md:w-[400px] lg:w-[500px] ' />
+                                    <div className='md:flex md:flex-col md:justify-around lg:w-[60%]'>
 
-                                    <p className='text-xs text-gray-500 mb-6'> Copilot</p>
-                                    <h1 className='font-semibold text-2xl'>Introducing Copilot Pro</h1>
-                                    <p className='text-gray-800 mb-5'>Add Copilot Pro to your M365 personal or family subscription and get powerful AI in your favorite apps. </p>
+                                    <p className='text-xs text-gray-500 mb-6  lg:text-sm '> Copilot</p>
+                                    <h1 className='font-semibold text-2xl lg:text-3xl'>Introducing Copilot Pro</h1>
+                                    <p className='text-gray-800 mb-5 lg:text-lg'>Add Copilot Pro to your M365 personal or family subscription and get powerful AI in your favorite apps. </p>
                                     <button className=' bg-gray-900 text-white  py-3 px-3 rounded-xl md:w-[170px]'>Read the blog </button>
                                     </div>
 
@@ -51,39 +55,39 @@ function Microlandingthree() {
                                 <div className='md:flex md:space-x-4'>
 
 
-                                    <div className="containers w-full my-4 border shadow-sm shadow-black rounded-2xl p-2">
+                                    <div className="containers w-full my-4 border shadow-sm shadow-black rounded-2xl p-2 bg-white flex flex-col justify-between">
                                         <img src={feature2} alt="" className='w-full h-[120px] sm:h-[250px] object-cover rounded-2xl ' />
                                         <p className='text-xs text-gray-500 mb-6'> Microsoft Outlook</p>
                                         <h1 className='font-semibold text-2xl'>The new Outlook for Windows is here</h1>
                                         <p className='text-gray-800 mb-5'>Stay organized your way. Outlook email and calendar are now included for free with Windows.  </p>
-                                        <button className=' bg-gray-900 text-white py-3 px-3 rounded-xl '>Learn more</button>
+                                        <button className=' bg-gray-900 text-white py-3 px-3 rounded-xl w-[30%] '>Learn more</button>
 
 
                                     </div>
                                     {/* thirdfeature */}
-                                    <div className="containers w-full my-4 border shadow-sm shadow-black rounded-2xl p-2">
+                                    <div className="containers w-full my-4 border shadow-sm shadow-black rounded-2xl p-2 bg-white flex flex-col justify-between">
                                         <img src={feature3} alt="" className='w-full h-[120px] sm:h-[250px] object-cover rounded-2xl ' />
                                         <p className='text-xs text-gray-500 mb-6'> Clipchamp</p>
                                         <h1 className='font-semibold text-2xl'>Tell your story, your way</h1>
                                         <p className='text-gray-800 mb-5'>Seamlessly and easily create scroll-stopping videos using essential tools, intuitive controls, and customizable content with Clipchamp. </p>
-                                        <button className=' bg-gray-900 text-white py-3 px-3 rounded-xl '>Learn More</button>
+                                        <button className=' bg-gray-900 text-white py-3 px-3 rounded-xl w-[30%] '>Learn More</button>
 
 
                                     </div>
                                     {/* fourth feature */}
-                                    <div className="containers w-full my-4 border shadow-sm shadow-black rounded-2xl p-2">
+                                    <div className="containers w-full my-4 border shadow-sm shadow-black rounded-2xl p-2 bg-white flex flex-col justify-between">
                                         <img src={feature4} alt="" className='w-full h-[120px] sm:h-[250px] object-cover rounded-2xl ' />
                                         <p className='text-xs text-gray-500 mb-6'> Micorsoft Defender</p>
                                         <h1 className='font-semibold text-2xl'>Everyday online security and protection</h1>
                                         <p className='text-gray-800 mb-5'>Help protect your identities1, data, and devices from threats.Available exclusively with a Microsoft 365 Personal or Family subscription.  </p>
-                                        <button className=' bg-gray-900 text-white py-3 px-3 rounded-xl '>Learn More</button>
+                                        <button className=' bg-gray-900 text-white py-3 px-3 rounded-xl w-[30%] '>Learn More</button>
 
 
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                        </div>
 
                     </div>
                 </details>

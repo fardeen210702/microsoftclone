@@ -14,15 +14,15 @@ function Header() {
     console.log(nav);
     return (
         <div className='header '>
-            <div className="midscreenheader hidden md:flex  md:justify-between items-center px-2 py-4 lg:px-11 xl:px-20">
-                <div className="leftnav flex space-x-3 items-center">
+            <div className="midscreenheader hidden md:flex  md:justify-between items-center px-2 py-4 lg:px-11 xl:px-20 lg:py-6">
+                <div className="leftnav flex space-x-3 lg:space-x-10 items-center">
                     <div className="logo">
                         <Link to='/'> 
                         <img className='w-[120px]'src={Microsoftimg} alt="" />
                         </Link>
 
                     </div>
-                    <div className="links space-x-2 text-xs">
+                    <div className="links space-x-2 text-xs md:text-sm  lg:text-base lg:space-x-7 ">
                         <Link  className='hover:border-b border-black'to='/microsoft365'> Microsoft 365</Link>
                         <Link className='hover:border-b border-black' to='/teams'> Teams</Link>
                         <Link className='hover:border-b border-black' to='/copilot'> Copilot</Link>
