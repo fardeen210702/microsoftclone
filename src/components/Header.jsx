@@ -14,7 +14,7 @@ function Header() {
     console.log(nav);
     return (
         <div className='header '>
-            <div className="midscreenheader hidden md:flex  md:justify-between items-center px-2 py-4 lg:px-11 xl:px-20 lg:py-6">
+            <div className="midscreenheader hidden md:flex  md:justify-between items-center px-2 py-4 lg:px-11 xl:px-20 lg:py-4">
                 <div className="leftnav flex space-x-3 lg:space-x-10 items-center">
                     <div className="logo">
                         <Link to='/'> 
@@ -22,7 +22,7 @@ function Header() {
                         </Link>
 
                     </div>
-                    <div className="links space-x-2 text-xs md:text-sm  lg:text-base lg:space-x-7 ">
+                    <div className="links space-x-2 text-xs md:text-sm md:space-x-2  lg:text-sm xl:space-x-3 ">
                         <Link  className='hover:border-b border-black'to='/microsoft365'> Microsoft 365</Link>
                         <Link className='hover:border-b border-black' to='/teams'> Teams</Link>
                         <Link className='hover:border-b border-black' to='/copilot'> Copilot</Link>

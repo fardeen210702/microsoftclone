@@ -10,7 +10,7 @@ function Microlandingthree() {
     return (
         <div className='micro3 w-full shadow-lg shadow-black mt-3 p-2  '>
             <div className="details flex flex-col items-center  w-full">
-                <details className='w-full cursor-pointer '><summary className='list-none flex items-center justify-between sticky top-0 bg-white py-3 border-b-2 border-blue-950 font-bold  '>How it works <FaAngleRight /> </summary>
+                <details className='w-full cursor-pointer '><summary className='list-none flex items-center justify-between sticky top-0 bg-white py-3 border-b-2 border-blue-950 font-bold sm:border-none md:border-none shadow '>How it works <FaAngleRight /> </summary>
                     <div className="detail my-4">
                         <p className=' text-gray-500 font-semibold '> How it works</p>
                         <h1 className='font-bold text-3xl'>Help maximize your everyday</h1>
@@ -21,7 +21,7 @@ function Microlandingthree() {
                 </details>
 
                 {/* second Detail */}
-                <details className='w-full flex justify-center '><summary className='list-none   flex items-center justify-between  sticky top-0 bg-white py-3 border-b-2 border-blue-950 font-bold'> Featured news<FaAngleRight /> </summary>
+                <details className='w-full flex justify-center '><summary className='list-none   flex items-center justify-between  sticky top-0 bg-white py-3 border-b-2 border-blue-950 font-bold sm:border-none  md:border-none shadow'> Featured news<FaAngleRight /> </summary>
                     <div className="detail my-4  flex flex-col w-full items-center bg-gray-100 ">
                         <div className=' lg:w-[85%] '>
 
@@ -47,7 +47,7 @@ function Microlandingthree() {
                                     <p className='text-xs text-gray-500 mb-6  lg:text-sm '> Copilot</p>
                                     <h1 className='font-semibold text-2xl lg:text-3xl'>Introducing Copilot Pro</h1>
                                     <p className='text-gray-800 mb-5 lg:text-lg'>Add Copilot Pro to your M365 personal or family subscription and get powerful AI in your favorite apps. </p>
-                                    <button className=' bg-gray-900 text-white  py-3 px-3 rounded-xl md:w-[170px]'>Read the blog </button>
+                                    <button className='w-[150px] bg-gray-900 text-white  py-3 px-3 rounded-xl md:w-[170px]'>Read the blog </button>
                                     </div>
 
 
@@ -60,7 +60,7 @@ function Microlandingthree() {
                                         <p className='text-xs text-gray-500 mb-6'> Microsoft Outlook</p>
                                         <h1 className='font-semibold text-2xl'>The new Outlook for Windows is here</h1>
                                         <p className='text-gray-800 mb-5'>Stay organized your way. Outlook email and calendar are now included for free with Windows.  </p>
-                                        <button className=' bg-gray-900 text-white py-3 px-3 rounded-xl w-[30%] '>Learn more</button>
+                                        <button className=' w-[150px] bg-gray-900 text-white py-3 px-3 rounded-xl md:w-[140px]'>Learn more</button>
 
 
                                     </div>
@@ -70,7 +70,7 @@ function Microlandingthree() {
                                         <p className='text-xs text-gray-500 mb-6'> Clipchamp</p>
                                         <h1 className='font-semibold text-2xl'>Tell your story, your way</h1>
                                         <p className='text-gray-800 mb-5'>Seamlessly and easily create scroll-stopping videos using essential tools, intuitive controls, and customizable content with Clipchamp. </p>
-                                        <button className=' bg-gray-900 text-white py-3 px-3 rounded-xl w-[30%] '>Learn More</button>
+                                        <button className=' w-[150px] bg-gray-900 text-white py-3 px-3 rounded-xl md:w-[140px] '>Learn More</button>
 
 
                                     </div>
@@ -80,7 +80,7 @@ function Microlandingthree() {
                                         <p className='text-xs text-gray-500 mb-6'> Micorsoft Defender</p>
                                         <h1 className='font-semibold text-2xl'>Everyday online security and protection</h1>
                                         <p className='text-gray-800 mb-5'>Help protect your identities1, data, and devices from threats.Available exclusively with a Microsoft 365 Personal or Family subscription.  </p>
-                                        <button className=' bg-gray-900 text-white py-3 px-3 rounded-xl w-[30%] '>Learn More</button>
+                                        <button className=' w-[150px] bg-gray-900 text-white py-3 px-3 rounded-xl md:w-[140px] '>Learn More</button>
 
 
                                     </div>
