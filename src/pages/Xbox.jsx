@@ -1,8 +1,11 @@
 import React from 'react'
+import XboxCarousel from '../components/XboxCarousel'
 
 function Xbox() {
   return (
-    <div>Xbox</div>
+    <div className='w-full '>
+      <XboxCarousel/>
+    </div>
   )
 }
 

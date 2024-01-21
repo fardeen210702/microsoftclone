@@ -3,9 +3,9 @@ import Teamslanding from '../images/teamslanding.avif'
 
 function Teams1() {
   return (
-    <div className='w-full lg:bg-gray-100 '>
+    <div className='w-full lg:bg-gray-100 relative '>
         <div className="img sm:mb-10 xl:flex xl:justify-end  w-full ">
-            <img src={Teamslanding} className='h-[300px] w-full object-cover sm:h-[470px] xl:h-[600px] xl:w-[80%] '  alt="" />
+            <img src={Teamslanding} className='h-[300px] w-full object-cover sm:h-[470px] xl:h-[600px] xl:w-[65%] '  alt="" />
         </div>
         <div className='px-3 space-y-6 xl:absolute xl:top-[25%] xl:left-[2%] xl:w-[45%]'>
             <div className='space-y-3' >

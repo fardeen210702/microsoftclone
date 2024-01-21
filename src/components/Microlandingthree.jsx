@@ -8,7 +8,7 @@ import feature4 from '../images/feature4.avif'
 
 function Microlandingthree() {
     return (
-        <div className='micro3 w-full shadow-lg shadow-black mt-3 p-2  '>
+        <div className='micro3 w-full shadow shadow-black mt-3 p-2  '>
             <div className="details flex flex-col items-center  w-full">
                 <details className='w-full cursor-pointer '><summary className='list-none flex items-center justify-between sticky top-0 bg-white py-3 border-b-2 border-blue-950 font-bold sm:border-none md:border-none shadow '>How it works <FaAngleRight /> </summary>
                     <div className="detail my-4">
