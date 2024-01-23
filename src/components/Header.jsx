@@ -25,11 +25,11 @@ function Header() {
                     <div className="links space-x-2 text-xs md:text-sm md:space-x-2  lg:text-sm xl:space-x-3 ">
                         <Link  className='hover:border-b border-black'to='/microsoft365'> Microsoft 365</Link>
                         <Link className='hover:border-b border-black' to='/teams'> Teams</Link>
-                        <Link className='hover:border-b border-black' to='/copilot'> Copilot</Link>
-                        <Link className='hover:border-b border-black' to='/windows'> Windows</Link>
-                        <Link className='hover:border-b border-black' to='/surface'> Surface</Link>
+                        {/* <Link className='hover:border-b border-black' to='/copilot'> Copilot</Link> */}
+                        {/* <Link className='hover:border-b border-black' to='/windows'> Windows</Link> */}
+                        {/* <Link className='hover:border-b border-black' to='/surface'> Surface</Link> */}
                         <Link className='hover:border-b border-black' to='/xbox'> Xbox</Link>
-                        <Link className='hover:border-b border-black' to='/support'> Support</Link>
+                        {/* <Link className='hover:border-b border-black' to='/support'> Support</Link> */}
                     </div>
                 </div>
                 <div className="rightnav flex space-x-3 items-center">
@@ -44,7 +44,7 @@ function Header() {
             </div>
 
             {/* Mobile Navbar  */}
-            <div className="mobileheader md:hidden flex justify-between items-center py-4 px-2 ">
+            <div className="mobileheader md:hidden flex justify-between items-center py-4 px-2">
                 <div className="navigation flex space-x-3 ">
                     <p onClick={handlenavchange}>{
                         nav ? <RxCross1 className='size-5' /> : <IoMenuOutline className='size-5'  />
@@ -67,14 +67,14 @@ function Header() {
                 
                 
             
-            <div className={nav ? ' absolute left-0 top-14 z-20 w-full bg-white flex flex-col space-y-2 text-lg transition-all ease-in-out  delay-75 border border-gray-200 md:hidden ' : "links fixed flex flex-col -left-28 bg-white " }  onClick={handlenavchange}>
+            <div className={nav ? ' absolute left-0 top-14 z-20 w-full h-full bg-white flex flex-col space-y-2 text-lg transition-all ease-in-out  delay-75 border border-gray-200 md:hidden ' : "links fixed flex flex-col -left-28 bg-white " }  onClick={handlenavchange}>
                         <Link  className='border-b-2 py-2 px-2  'to='/microsoft365'> MicroSoft365</Link>
                         <Link className='border-b-2 py-2 px-2 my-2' to='/teams'> Teams</Link>
-                        <Link className='border-b-2 py-2 px-2 my-2' to='/copilot'> Copilot</Link>
-                        <Link className='border-b-2 py-2 px-2 my-2' to='/windows'> Windows</Link>
-                        <Link className='border-b-2 py-2 px-2 my-2' to='/surface'> Surface</Link>
+                        {/* <Link className='border-b-2 py-2 px-2 my-2' to='/copilot'> Copilot</Link> */}
+                        {/* <Link className='border-b-2 py-2 px-2 my-2' to='/windows'> Windows</Link> */}
+                        {/* <Link className='border-b-2 py-2 px-2 my-2' to='/surface'> Surface</Link> */}
                         <Link className='border-b-2 py-2 px-2 my-2' to='/xbox'> Xbox</Link>
-                        <Link  className='border-b-2 py-2 px-2 my-2'to='/support'> Support</Link>
+                        {/* <Link  className='border-b-2 py-2 px-2 my-2'to='/support'> Support</Link> */}
                     </div>
             </div>
 

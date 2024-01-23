@@ -4,13 +4,14 @@ import { FaAngleRight } from "react-icons/fa6"
 function CarouselItems({ item }) {
     const { img1, h1, p, btn, IMG } = item
     return (
-        <div className='w-full  relative text-white'>
-                <img src={IMG} className='w-full h-[450px] object-cover' alt="" />
-                <div className="details absolute z-10 top-60 left-0 flex flex-col text-center items-center w-full ">
-                    <h1 className='font-bold text-3xl '>{h1}</h1>
-                    <p>{p}</p>
-                    <button className="flex items-center gap-2 mt-5  py-2 px-4 font-extrabold bg-[#8bd80a] text-green-950 y-3 "> {btn} <FaAngleRight /></button>
-                </div>
+        <div className="carouselitem w-full shrink-0  relative  sm:h-[800px] md:h-[900px] lg:h-[1000px] overflow-hidden xl:h-min">
+            <img src={IMG} className='-z-10  sm:object-cover sm:w-full xl:hidden ' alt="" />
+            <img src={img1} className="hidden xl:flex" alt="" />
+            <div className="details absolute top-[50%] sm:top-[60%] flex flex-col items-center w-full xl:w-1/3 xl:top-[15%] xl:left-[3%] p-2 text-white gap-3 sm:gap-6">
+                <h1 className="text-3xl  font-bold text-center sm:text-5xl ">{h1}</h1>
+                <p className="text-xl text-center sm:text-2xl lg:text-3xl">{p}</p>
+                <button className=" py-2 px-5 bg-[#9bf00b] font-extrabold text-green-950 flex items-center gap-4 sm:text-lg  sm:p-2">{btn}<FaAngleRight/> </button>
+            </div>
 
         </div>
     )
