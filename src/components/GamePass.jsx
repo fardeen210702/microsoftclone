@@ -7,30 +7,30 @@ import game5 from '../images/gmae5.svg'
 import game6 from '../images/game6.svg'
 function GamePass() {
   return (
-    <div className='  flex flex-wrap text-green-700 justify-center my-10 '>
-        <div className="img w-[120px] sm:w-[150px] hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2  ">
-        <img className='w-[70px] sm:w-[90px]' src={game1} alt="" />
-        <h1 className='text-xl font-semibold'>GAME PASS</h1>
+    <div className='  flex flex-wrap text-green-700 justify-center gap-4 my-10 '>
+        <div className="img w-[120px]  hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2  ">
+        <img className='w-[50px] h-[50px] ' src={game1} alt="" />
+        <h1 className='text-lg font-semibold'>GAME PASS</h1>
         </div>
-        <div className="img w-[120px] sm:w-[150px] hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2 ">
-        <img className='w-[70px] sm:w-[90px]' src={game2} alt="" />
-        <h1 className='text-xl font-semibold'>GAMES</h1>
+        <div className="img w-[120px]  hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2 ">
+        <img className='w-[50px] h-[50px] ' src={game2} alt="" />
+        <h1 className='text-lg font-semibold'>GAMES</h1>
         </div>
-        <div className="img w-[120px] sm:w-[150px] hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2 ">
-        <img className='w-[70px] sm:w-[90px]' src={game3} alt="" />
-        <h1 className='text-xl font-semibold'>CONSOLES</h1>
+        <div className="img w-[120px]  hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2 ">
+        <img className='w-[50px] h-[50px] ' src={game3} alt="" />
+        <h1 className='text-lg font-semibold'>CONSOLES</h1>
         </div>
-        <div className="img w-[120px] sm:w-[150px] hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2 ">
-        <img className='w-[70px] sm:w-[90px]' src={game4} alt="" />
-        <h1 className='text-xl font-semibold'>ACCESSORIES</h1>
+        <div className="img w-[120px]  hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2 ">
+        <img className='w-[50px] h-[50px] ' src={game4} alt="" />
+        <h1 className='text-lg font-semibold'>ACCESSORIES</h1>
         </div>
-        <div className="img w-[120px] sm:w-[150px] hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2 ">
-        <img className='w-[70px] sm:w-[90px]' src={game5} alt="" />
-        <h1 className='text-xl font-semibold'>DEALS</h1>
+        <div className="img w-[120px]  hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2 ">
+        <img className='w-[50px] h-[50px] ' src={game5} alt="" />
+        <h1 className='text-lg font-semibold'>DEALS</h1>
         </div>
-        <div className="img w-[120px] sm:w-[150px] hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2 ">
-        <img className='w-[70px] sm:w-[90px]' src={game6} alt="" />
-        <h1 className='text-xl font-semibold'>SIGN IN</h1>
+        <div className="img w-[120px]  hover:border-b-4 hover:border-green-700  flex flex-col items-center my-2 ">
+        <img className='w-[50px] h-[50px] ' src={game6} alt="" />
+        <h1 className='text-lg font-semibold'>SIGN IN</h1>
         </div>
     </div>
   )
