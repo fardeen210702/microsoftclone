@@ -20,7 +20,7 @@ function GameImp() {
             duration:3,
            scrollTrigger:{
             trigger:'.second',
-            // markers:true,
+            
             start:'top 30%',
             end:'top 10%',
             scrub:true,
@@ -33,7 +33,7 @@ function GameImp() {
             scrollTrigger:{
                 trigger:'.prince',
                 start:'top 70%',
-                // markers:true,
+              
             end:'top 20%',
             scrub:true,
 
@@ -45,7 +45,7 @@ function GameImp() {
             delay:1,
             scrollTrigger:{
                 trigger:'.three',
-                // markers:true,
+               
                 start:'top 70%',
                 end:'bottom 50%',
                 scrub:true,

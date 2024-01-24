@@ -18,11 +18,9 @@ function GameLandingPage() {
         opacity:0,
         scrollTrigger:{
           trigger:'.main',
-          // markers:true,
           start:'top 90%',
           end : 'bottom center',
 
-          scrub:true
         }
 
       })

@@ -21,12 +21,12 @@ function Microlandingthree() {
                 </details>
 
                 {/* second Detail */}
-                <details className='w-full flex justify-center '><summary className='list-none   flex items-center justify-between  sticky top-0 bg-white py-3 border-b-2 border-blue-950 font-bold sm:border-none  md:border-none shadow'> Featured news<FaAngleRight /> </summary>
+                <details className='w-full flex justify-center '><summary className='list-none cursor-pointer  flex items-center justify-between  sticky top-0 bg-white py-3 border-b-2 border-blue-950 font-bold sm:border-none  md:border-none shadow'> Featured news<FaAngleRight /> </summary>
                     <div className="detail my-4  flex flex-col w-full items-center bg-gray-100 ">
                         <div className=' lg:w-[85%] '>
 
                        
-                        <div className='lg:space-y-5 '>
+                        <div className='lg:space-y-5  cursor-pointer'>
 
                             <p className=' text-gray-500 font-semibold '> Featured news</p>
                             <h1 className='font-bold text-2xl lg:text-4xl lg:font-semibold'>Discover what’s happening with Microsoft 365</h1>
