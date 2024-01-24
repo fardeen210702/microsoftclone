@@ -1,12 +1,12 @@
 import React from 'react'
-import Landingpgae from '../components/Landingpgae'
+import Landingpage from '../components/Landingpage'
 import Landingpage2 from '../components/Landingpage2'
 
 function Home() {
   return (
     <>
     
-    <Landingpgae/>
+    <Landingpage/>
     <Landingpage2/>
     
  

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import img16 from '../images/img16.jpg'
 import img17 from '../images/img17.jpg'
 import img18 from '../images/img18.jpg'
@@ -7,10 +9,55 @@ import img20 from '../images/img20.jpg'
 import img21 from '../images/img21.jpg'
 import { FaChevronRight } from "react-icons/fa";
 
-
+gsap.registerPlugin(ScrollTrigger)
 function GameImp() {
+    const component  = useRef(0)
+    useLayoutEffect(() => {
+      const ctx = gsap.context(()=>{
+        let tl = gsap.timeline()
+        tl.from('.second .two',{
+            y:200,
+            duration:3,
+           scrollTrigger:{
+            trigger:'.second',
+            // markers:true,
+            start:'top 30%',
+            end:'top 10%',
+            scrub:true,
+           }
+
+        })
+        tl.from('.prince .detailss',{
+            y:200,
+            duration:3,
+            scrollTrigger:{
+                trigger:'.prince',
+                start:'top 70%',
+                // markers:true,
+            end:'top 20%',
+            scrub:true,
+
+            }
+        })
+        tl.from('.three .elder',{
+            y:200,
+            duration:3,
+            delay:1,
+            scrollTrigger:{
+                trigger:'.three',
+                // markers:true,
+                start:'top 70%',
+                end:'bottom 50%',
+                scrub:true,
+            }
+        })
+      },component)
+      return () => ctx.revert()
+    }, [])
+    
+
     return (
-        <div className='w-full flex flex-col gap-1 lg:flex-row p-2 '>
+        <div className='main w-full flex flex-col gap-1 lg:flex-row p-2 ' ref={component}>
             {/* left div */}
             <div className="frst w-full flex flex-col gap-1 lg:w-1/2 ">
                 <div className="one sm:relative lg:w-full ">
@@ -24,8 +71,8 @@ function GameImp() {
                     </div>
                 </div>
                 {/* div two */}
-                <div className='flex flex-col w-full gap-1'>
-                    <div className="two flex flex-col lg:flex-row">
+                <div className='prince flex flex-col w-full gap-1'>
+                    <div className="detailss flex flex-col lg:flex-row">
                         <div className="img h-[30%] lg:h-full w-full overflow-hidden ">
                             <img src={img19} className='h-full w-full hover:scale-110 -z-10 transition-all delay-75 ease-in-out ' alt="" />
                         </div>
@@ -37,7 +84,7 @@ function GameImp() {
 
                     </div>
                     <div className="three">
-                        <div className="two flex flex-col lg:flex-row-reverse">
+                        <div className="elder flex flex-col lg:flex-row-reverse">
                             <div className="img h-[30%] lg:h-[260px] w-full overflow-hidden  ">
                                 <img src={img20} className='h-full w-full hover:scale-110 -z-10 transition-all delay-75 ease-in-out ' alt="" />
                             </div>
@@ -76,11 +123,11 @@ function GameImp() {
                         <button className='flex items-center gap-3 font-bold'> LEARN MORE <FaChevronRight /></button>
                     </div>
                 </div>
-                <div className="three w-full lg:flex lg:flex-row-reverse">
+                <div className="Forza w-full lg:flex lg:flex-row-reverse">
                     <div className="img w-full h-[30%]  lg:h-full overflow-hidden ">
                         <img src={img21} className='w-full lg:h-[245px]  hover:scale-110 -z-10 transition-all delay-75 ease-in-out ' alt="" />
                     </div>
-                    <div className="details  w-full bg-[#107c10] text-white space-y-5 p-2">
+                    <div className="forza  w-full bg-[#107c10] text-white space-y-5 p-2">
                         <h1 className='text-3xl  font-bold'>Forza Motorsport Update 4.0</h1>
                         <p>Experience Daytona in the new free update.</p>
                         <button className='font-bold flex items-center gap-3'> GET IT NOW <FaChevronRight /></button>
